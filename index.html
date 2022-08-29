@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h2>Ed's Todo List</h2>
+    </header>
+    <form>
+        <input type="text" placeholder="Input your list!!" class="todo-input">
+        <button type="submit" class="todo-btn">
+            <i class="fa-solid fa-bug"></i>
+        </button>
+        <div class="select">
+            <select name="todo" class="select-list">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="body_todo">
+        <ul class="todo-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
